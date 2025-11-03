@@ -33,4 +33,5 @@ EXPOSE 8000
 ENV GOOGLE_API_KEY="AIzaSyDCnAFTq5tS3rCrYb7M5jP90IuvitcgFLQ"
 
 # Start the FastAPI app using Uvicorn (production config)
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "2"]
+
