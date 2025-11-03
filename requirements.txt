@@ -1,5 +1,4 @@
 fastapi==0.120.1
-uvicorn==0.27.1
 python-dotenv==1.0.0
 faiss-cpu==1.7.4
 langchain==0.1.9
@@ -11,5 +10,4 @@ langchain-huggingface==0.3.1
 sentence-transformers==2.5.1
 pydantic==2.6.1
 python-multipart==0.0.9
-
 uvicorn==0.38.0
