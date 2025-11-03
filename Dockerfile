@@ -26,7 +26,7 @@ COPY . .
 RUN mkdir -p /app/data
 
 # Expose the FastAPI port
-EXPOSE 8000
+EXPOSE 8080
 
 # Avoid hardcoding API keys inside the image
 # (Instead, set GOOGLE_API_KEY in Cloud Run > Variables & Secrets)
@@ -34,4 +34,5 @@ ENV GOOGLE_API_KEY="AIzaSyDCnAFTq5tS3rCrYb7M5jP90IuvitcgFLQ"
 
 # Start the FastAPI app using Uvicorn (production config)
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "2"]
+
 
