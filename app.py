@@ -33,7 +33,7 @@ app.add_middleware(
 )
 
 # Load environment variables
-GOOGLE_API_KEY = "AIzaSyDCnAFTq5tS3rCrYb7M5jP90IuvitcgFLQ"
+GOOGLE_API_KEY = ""
 
 # Request/Response models
 class QueryRequest(BaseModel):
@@ -322,4 +322,5 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
 
     # http://127.0.0.1:8000/docs
+
 
